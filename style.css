@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Open Sans;
+}
+
+
+.board {
+    background-color: burlywood;
+}
+.board h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.column-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    align-self: flex-start;
+    position: relative;
+    width: calc(33.3% - 20px);
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    padding-bottom: 45px;
+}
+.create-column{
+    margin-left:15px;
+    border: none;
+    background-color: burlywood;
+}
+.create-column:after{
+    font-family: 'FontAwesome';
+    content: '\f055';
+    position: relative;
+    background-color: burlywood;
+    font-size: 250%;
+    cursor: pointer;
+}
+
+.column-title {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.column h2 {
+    height: 50px;
+    padding: 0 40px 0 10px;
+    line-height: 50px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    background-color: #5c7479;
+}
+
+.column-card-list {
+    list-style: none;
+    padding: 10px;
+}
+
+.column>.btn-delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius:  0 10px 0 0;
+    line-height: 25px;
+    background-color:  #d2dbaa;
+    border: none;
+    cursor: pointer;
+}
+
+.add-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: lightgrey;
+    color: lightslategrey;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    cursor: move;
+    background-color: #fde268;
+}
+
+.column-card-list li {
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.column-card-list .btn-delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #84cdca;
+    border: none;
+}

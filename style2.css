@@ -1,0 +1,11 @@
+#countries{
+    list-style: none;
+}
+.kraj{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+#countries li{
+    padding-bottom: 10px;
+}
